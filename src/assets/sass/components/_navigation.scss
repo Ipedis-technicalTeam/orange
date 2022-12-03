@@ -1,7 +1,219 @@
 @use '../theme' as *;
 @use '../utilities' as *;
 
-nav {
-  background-color: $navBackgroundColor;
-  color: $navTextColor;
+
+.lp-nav {
+  width: 100%;
+  background-color: $black;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  margin: 0 auto;
+  z-index: 40;
+
+  &::before {
+    content: "";
+    position: fixed;
+    z-index: 1;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-out;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+
+      &__link {
+
+        &:focus, &:focus-within {
+          outline-color: $white;
+        }
+
+        &__img {
+          width: 100%;
+        }
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      max-width: 20rem;
+      position: fixed;
+      z-index: 40;
+      top: 0;
+      right: 0;
+      margin: 0;
+      background-color: $black;
+      transition: 0.4s;
+      padding-top: 60px;
+      visibility: hidden;
+      transform: translateX(100%);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-y:contain;
+
+      &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: inherit;
+        width: 100%;
+        gap: 30px;
+        padding-left: 30px;
+
+        &__item {
+
+          &-link {
+            color: $white;
+
+            &:focus, &:focus-within {
+              color: $primaryColor;
+              outline-offset: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.has-open-menu {
+  .lp-nav {
+    &::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .container {
+      .menu {
+        transform: translateX(0);
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.menu_button {
+  color: $white;
+
+  &--open {
+    font-size: 2rem;
+  }
+
+  &--close {
+    position: absolute;
+    top: 1rem;
+    right: 1.75rem;
+    font-size: 2rem;
+  }
+}
+
+@media #{$ps-desktop} {
+  .lp-nav {
+
+    .container {
+      width: 80%;
+      max-width: 1300px;
+      padding: 0;
+      justify-content: unset;
+
+      .logo {
+        margin-right: 43px;
+      }
+
+      .menu {
+        max-width: 100%;
+        height: 100%;
+        transform: translateX(0);
+        visibility: visible;
+        position: static;
+        background-color: transparent;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 0;
+
+        &__list {
+          align-items: center;
+          gap: 40px;
+          padding-left: 2px;
+
+          &__item {
+            position: relative;
+            margin: 0;
+            height: 60px;
+
+            &-link {
+              transition: .3s ease-in;
+              font-weight: 400;
+              font-size: 16px;
+              display: flex;
+              align-items: flex-end;
+              height: 100%;
+              position: relative;
+              cursor: pointer;
+              padding-bottom: 8px;
+
+              &::after {
+                transition: .3s ease-in;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background: $black;
+                bottom: -5px;
+                left: 0;
+              }
+
+              &:hover, &:focus {
+                color: $primaryColor;
+
+                &::after {
+                  background: $primaryColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .has-open-menu {
+    .lp-nav {
+      &::before {
+        display: none;
+      }
+
+      .container {
+        .menu {
+          transform: translateX(0);
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .menu_button {
+    display: none;
+  }
 }

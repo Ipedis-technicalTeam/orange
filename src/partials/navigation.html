@@ -1,15 +1,40 @@
 <!-- NAVIGATION START -->
-<nav role="navigation">
+<nav role="navigation" id="lp-nav" class="lp-nav">
   <div class="container">
-    <!-- TEST LANG TOGGLE -->
-    <button
-      id="switch-lang"
-      style="background-color: #444; color: #fff; padding: 1em 1.5em; margin-block: 1em; --focus-color: #444"
-      data-i18n="navigation.btn"
-    ></button>
-    <!-- TEST LANG TOGGLE -->
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="https://www.orange.fr/portail" target="_blank" rel="noreferrer noopener" class="logo__link focus-white" id="nav-orange" data-i18n="navigation.logo.label" data-i18n-attr="aria-label">
+        <img src="../assets/images/logo-orange.jpeg" alt="" class="logo__link__img">
+      </a>
+    </div>
 
-    <h2 id="lp-nav" data-i18n="navigation.heading"></h2>
+    <button class="menu_button menu_button--open js-open" aria-label="Open menu" aria-expanded="false" type="button">&#9776;</button>
+
+    <!-- MENU -->
+    <div class="menu">
+      <button class="menu_button menu_button--close js-close" aria-label="Close menu" aria-expanded="true" type="button">&times;</button>
+
+      <ul class="menu__list">
+        <li class="menu__list__item">
+          <a href="#" class="menu__list__item-link" data-i18n="navigation.list.item-1"></a>
+        </li>
+        <li class="menu__list__item">
+          <a href="#" class="menu__list__item-link" data-i18n="navigation.list.item-2"></a>
+        </li>
+        <li class="menu__list__item">
+          <a href="#" class="menu__list__item-link" data-i18n="navigation.list.item-3"></a>
+        </li>
+        <li class="menu__list__item">
+          <a href="#" class="menu__list__item-link" data-i18n="navigation.list.item-4"></a>
+        </li>
+        <li class="menu__list__item">
+          <a href="#" class="menu__list__item-link" data-i18n="navigation.list.item-5"></a>
+        </li>
+        <li class="menu__list__item">
+          <a href="#" class="menu__list__item-link" data-i18n="navigation.list.item-6"></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- NAVIGATION END -->

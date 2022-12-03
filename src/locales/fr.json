@@ -2,36 +2,38 @@
   "skip-link": {
     "nav": {
       "label": "Aller vers la navigation",
-
-      "text": "Aller vers nav"
+      "text": "Aller vers navigation"
     },
-
     "content": {
       "label": "Aller vers le contenu",
-
       "text": "Aller vers contenu"
     }
   },
 
   "head": {
-    "title": "Webpack Boilerplate | FR"
+    "title": "Orange - Le catalogue Autonomie - Automne 2022"
   },
 
   "navigation": {
-    "heading": "French Navigation",
-
-    "btn": "Switch to En"
+    "logo": {
+      "label": "Allez sur le site web Orange.fr, nouvelle fenêtre"
+    },
+    "list" : {
+      "item-1" : "Nous contacter",
+      "item-2" : "Mobile",
+      "item-3" : "Internet et TV",
+      "item-4" : "Fixe",
+      "item-5" : "Objets connectés et Accessoires",
+      "item-6" : "Actualités"
+    }
   },
 
   "header": {
-    "heading": "French Header"
   },
 
   "main": {
-    "heading": "French Main"
   },
 
   "footer": {
-    "heading": "French Footer"
   }
 }
