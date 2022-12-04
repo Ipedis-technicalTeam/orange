@@ -1,0 +1,35 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.edito {
+  padding: 30px 0;
+
+  @media only screen and (min-width: 768px) {
+    padding: 35px 0;
+  }
+
+  @media #{$ps-desktop} {
+    padding: 30px 0 60px 0;
+  }
+
+  .container {
+
+    .edito {
+
+      &-h3 {
+        font-family: $primaryFont;
+        font-size: clamp(1.625rem, 3.65vw, 1.875rem);
+        margin-bottom: 15px;
+      }
+
+      &-desc {
+        font-family: $primaryFont;
+        font-size: 1rem;
+
+        @media only screen and (min-width: 768px) {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}

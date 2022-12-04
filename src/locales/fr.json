@@ -29,11 +29,28 @@
   },
 
   "header": {
+    "h1-sr" : "Le catalogue Autonomie",
+    "h1-visible" : "Le catalogue<br>Autonomie",
+    "h2" : "Automne 2022"
   },
 
   "main": {
+    "edito": {
+      "h2" : "Édito",
+      "h3" : "Vous simplifier la vie",
+      "desc" : "Vous allez découvrir dans ce catalogue les forfaits, les applications, les mobiles, les fixes et les objets connectés conçus pour vous rendre la vie plus facile et vous permettre d'être en lien avec vos proches."
+    }
   },
 
   "footer": {
+    "label": "Réseaux sociaux et informations d'aide",
+    "bottom" : {
+      "accessible" : "e-accessible",
+      "link": {
+        "visible": "PubliSpeak.com",
+        "url": "https://www.ipedis.com/publispeak",
+        "label" : "Découvrir Publispeak.com - Nouvelle fenêtre"
+      }
+    }
   }
 }

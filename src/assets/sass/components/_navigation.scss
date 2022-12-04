@@ -5,7 +5,7 @@
 .lp-nav {
   width: 100%;
   background-color: $black;
-  height: 70px;
+  height: 40px;
   display: flex;
   justify-content: center;
   top: 0;
@@ -31,15 +31,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
 
     .logo {
       display: flex;
       align-items: center;
-      height: 50px;
-      width: 50px;
+      height: 22px;
+      width: 22px;
 
       &__link {
 
@@ -58,7 +55,7 @@
       flex-direction: column;
       height: 100%;
       width: 100%;
-      max-width: 20rem;
+      max-width: 19rem;
       position: fixed;
       z-index: 40;
       top: 0;
@@ -73,6 +70,10 @@
       -webkit-overflow-scrolling: touch;
       overscroll-behavior-y:contain;
 
+      @media only screen and (min-width: 768px) {
+        max-width: 30rem;
+      }
+
       &__list {
         list-style: none;
         display: flex;
@@ -85,6 +86,7 @@
 
           &-link {
             color: $white;
+            font-family: $fontBold;
 
             &:focus, &:focus-within {
               color: $primaryColor;
@@ -115,29 +117,45 @@
 
 .menu_button {
   color: $white;
+  font-size: 1.25rem;
 
   &--open {
-    font-size: 2rem;
   }
 
   &--close {
     position: absolute;
     top: 1rem;
     right: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: $ps-breakpoint-mobile + 1) {
+  .lp-nav {
+    height: 60px;
+
+    .container {
+      .logo {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .menu_button {
     font-size: 2rem;
   }
 }
 
 @media #{$ps-desktop} {
   .lp-nav {
+    height: 70px;
 
     .container {
-      width: 80%;
-      max-width: 1300px;
-      padding: 0;
       justify-content: unset;
 
       .logo {
+        height: 50px;
+        width: 50px;
         margin-right: 43px;
       }
 

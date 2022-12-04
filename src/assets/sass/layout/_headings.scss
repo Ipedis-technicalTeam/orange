@@ -1,0 +1,30 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.title-h2 {
+  font-family: $fontBold;
+  font-size: clamp(1.5rem, 4vw, 2.125rem);
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+  }
+
+  @media #{$ps-desktop} {
+    margin-bottom: 40px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $primaryColor;
+    width: 1.875rem;
+    height: 0.375rem;
+    bottom: 0;
+    left: 0;
+  }
+}
