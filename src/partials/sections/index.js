@@ -1,3 +1,3 @@
 module.exports = {
-  sectionPartials: ['edito'],
+  sectionPartials: ['edito', 'mobile', 'actuality', 'contact']
 };

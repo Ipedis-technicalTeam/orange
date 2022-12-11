@@ -16,7 +16,7 @@
 
   "navigation": {
     "logo": {
-      "label": "Allez sur le site web Orange.fr, nouvelle fenêtre"
+      "label": "Allez sur le site web Orange.fr, nouvel onglet"
     },
     "list" : {
       "item-1" : "Nous contacter",
@@ -39,17 +39,79 @@
       "h2" : "Édito",
       "h3" : "Vous simplifier la vie",
       "desc" : "Vous allez découvrir dans ce catalogue les forfaits, les applications, les mobiles, les fixes et les objets connectés conçus pour vous rendre la vie plus facile et vous permettre d'être en lien avec vos proches."
+    },
+    "mobile": {
+      "h2" : "Mobile - Internet et TV - Fixe"
+    },
+    "actuality": {
+      "h2" : "Actualités"
+    },
+    "contact": {
+      "h2" : "Nous contacter",
+      "left" : {
+        "headingBoutique": "245 boutiques labellisées Autonomie",
+        "descBoutique" : "Trouver la boutique la plus proche de chez vous sur notre site agence.orange.fr",
+        "headingEspace" : "Nos espaces Autonomie",
+        "descEspace" : "Une structure unique dédiée aux seniors et aux personnes en situation de handicap ainsi qu'à leurs aidants."
+      },
+      "espaceList": {
+        "link-1" : {
+          "txt": "Mégastore Paris Opéra<br>10 rue de Halévy<br>75009 Paris",
+          "url": "https://agence.orange.fr/685441-boutique-orange-opera-paris-9",
+          "label": "Mégastore Paris Opéra, 10 rue de Halévy, 75009 Paris. Nouvel onglet"
+        },
+        "link-2" : {
+          "txt": "Mégastore Marseille Canebière<br>30 rue de la Canebière<br>13001 Marseille",
+          "url": "https://agence.orange.fr/15112-boutique-orange-canebiere-marseille",
+          "label": "Mégastore Marseille Canebière, 30 rue de la Canebière, 13001 Marseille. Nouvel onglet"
+        },
+        "link-3" : {
+          "txt": "Mégastore Lyon République<br>50 rue de la République<br>69002 Lyon 2",
+          "url": "https://agence.orange.fr/5752-boutique-orange-republique-lyon",
+          "label": "Mégastore Lyon République, 50 rue de la République, 69002 Lyon 2. Nouvel onglet"
+        },
+        "link-4" : {
+          "txt": "Mégastore Bordeaux Bègles<br>Centre commercial Carrefour<br>33130 Bègles",
+          "url": "https://agence.orange.fr/822-boutique-orange-begles",
+          "label": "Mégastore Bordeaux Bègles, Centre commercial Carrefour, 33130 Bègles. Nouvel onglet"
+        }
+      },
+      "right" : {
+        "headingTel": "Par téléphone",
+        "descTel": "Nos conseillers spécialisés vous accueillent du lundi au vendredi de 9h à 18h quel que soit votre mode de communication."
+      }
     }
   },
 
   "footer": {
     "label": "Réseaux sociaux et informations d'aide",
+    "top" : {
+      "left" : {
+        "social" : "Retrouvez-nous sur"
+      },
+      "facebook" : {
+        "url" : "https://www.facebook.com/Orange.France",
+        "label" : "Notre page Facebook d'Orange France - nouvel onglet"
+      },
+      "twitter" : {
+        "url": "https://twitter.com/orange_france",
+        "label" : "Notre page Twitter d'Orange France - nouvel onglet"
+      },
+      "help" : {
+        "url" : "https://assistance.orange.fr/",
+        "label" : "Aide et contact - nouvel onglet"
+      },
+      "forum" : {
+        "url" : "https://communaute.orange.fr/",
+        "label" : "Forum d'entraide - nouvel onglet"
+      }
+    },
     "bottom" : {
       "accessible" : "e-accessible",
       "link": {
         "visible": "PubliSpeak.com",
         "url": "https://www.ipedis.com/publispeak",
-        "label" : "Découvrir Publispeak.com - Nouvelle fenêtre"
+        "label" : "Découvrir Publispeak.com - nouvel onglet"
       }
     }
   }

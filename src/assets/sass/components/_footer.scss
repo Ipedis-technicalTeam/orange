@@ -7,9 +7,136 @@
 
   &__top {
     border-bottom: 1px solid #979797;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+      padding: 19px 20px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     @media #{$ps-desktop} {
       padding: 19px 70px;
+    }
+
+    &-left {
+      display: flex;
+      align-items: center;
+      padding: 15px 0 15px 20px;
+      border-bottom: 1px solid #979797;
+
+      @media only screen and (min-width: 768px) {
+        border: none;
+        padding: 0;
+      }
+
+      .socialTxt {
+        margin-right: 15px;
+        font-family: $fontBold;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        li {
+          &:nth-child(1) {
+            margin-right: 15px;
+          }
+
+          a {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $white;
+            border-radius: 50%;
+
+            img {
+              width: 15px;
+            }
+
+            .fb {
+              width: 8px;
+            }
+
+            .hover {
+              display: none;
+              transition: all 0.3s ease-in-out;
+            }
+
+            &:hover, &:focus {
+              background-color: $white;
+
+              .normal {
+                display: none;
+              }
+
+              .hover {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      padding: 15px 0 15px 20px;
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (min-width: 768px) {
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .help, .forum {
+        a {
+          display: flex;
+          align-items: center;
+
+          &:hover, &:focus {
+            .txt {
+              color: $primaryColor;
+              text-decoration: underline $primaryColor;
+            }
+          }
+
+          img {
+            width: 30px;
+            margin-right: 10px;
+
+            @media #{$ps-desktop} {
+              width: 40px;
+            }
+          }
+
+          .txt {
+            font-family: $fontBold;
+            text-decoration: underline $black;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .help {
+        margin-bottom: 30px;
+
+        @media only screen and (min-width: 768px) {
+          margin-bottom: 0;
+          margin-right: 30px;
+        }
+
+        @media #{$ps-desktop} {
+          margin-right: 50px;
+        }
+      }
     }
   }
 
@@ -17,13 +144,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 20px 20px 40px 20px;
 
     @media only screen and (min-width: $ps-breakpoint-mobile + 1) {
       justify-content: center;
-    }
-
-    @media #{$ps-desktop} {
-      padding: 19px 0;
+      padding: 20px 0;
     }
 
     .accessible {
@@ -57,6 +182,7 @@
     .ps-link {
       font-size: 0.875rem;
       line-height: 1.0;
+      text-decoration: underline $black;
 
       &:hover, &:focus {
         color: $primaryColor;

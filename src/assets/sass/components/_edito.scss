@@ -19,12 +19,14 @@
       &-h3 {
         font-family: $primaryFont;
         font-size: clamp(1.625rem, 3.65vw, 1.875rem);
+        color: $black;
         margin-bottom: 15px;
       }
 
       &-desc {
         font-family: $primaryFont;
         font-size: 1rem;
+        color: $black;
 
         @media only screen and (min-width: 768px) {
           font-size: 1.125rem;

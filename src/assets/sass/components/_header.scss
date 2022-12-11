@@ -11,6 +11,7 @@
   background-position: top;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 
   &::before {
     content: '';
@@ -27,11 +28,13 @@
   @media only screen and (min-width: $ps-breakpoint-mobile + 1) {
     height: 400px;
     background-image: url("../images/cover-md.jpeg");
+    margin-top: 60px;
   }
   
   @media #{$ps-desktop} {
     height: 700px;
     background-image: url("../images/cover-lg.jpeg");
+    margin-top: 70px;
   }
 
   .container {
@@ -42,11 +45,13 @@
       font-family: $fontBold;
       font-size: clamp(2.125rem, 6.5vw, 4.0625rem);
       margin-top: 50px;
+      color: $black;
     }
 
     .headingTwo {
       font-family: $fontBold;
       font-size: clamp(0.875rem, 2.45vw, 1.25rem);
+      color: $black;
       position: relative;
       padding-bottom: 8px;
       margin-top: 6px;

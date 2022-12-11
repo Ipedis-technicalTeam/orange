@@ -1,0 +1,244 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.actuality {
+  margin-bottom: 30px;
+
+  @media #{$ps-desktop} {
+    margin-bottom: 60px;
+  }
+
+  .container {
+    .actuality__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+
+      @media only screen and (min-width: 768px) {
+        width: 95%;
+      }
+
+      @media only screen and (min-width: 1024px) {
+        width: 100%;
+      }
+
+      &__item {
+        width: 95%;
+        min-height: 270px;
+
+        @media only screen and (min-width: 768px) {
+          width: 320px;
+          min-height: 310px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+          width: 300px;
+          min-height: 290px;
+        }
+
+        @media only screen and (min-width: 1260px) {
+          width: 330px;
+        }
+
+        @media only screen and (min-width: 1366px) {
+          width: 400px;
+          min-height: 325px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 12%;
+
+          @media only screen and (min-width: 768px) {
+            margin-bottom: 0;
+          }
+        }
+
+        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+          @media only screen and (min-width: 768px) {
+            margin-bottom: 5%;
+          }
+          @media only screen and (min-width: 1024px) {
+            margin-bottom: 0;
+          }
+        }
+
+        &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+          @media only screen and (min-width: 1024px)  {
+            margin-bottom: 5%;
+          }
+        }
+
+        &-link {
+          width: 100%;
+          height: 100%;
+          background-color: $lightGray;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-end;
+          position: relative;
+          padding-left: 10px;
+          padding-bottom: 15px;
+
+          @media only screen and (min-width: 768px) {
+            padding-left: 18px;
+            padding-bottom: 30px;
+          }
+
+          @media only screen and (min-width: 1024px) {
+            padding-bottom: 40px;
+          }
+
+          @media only screen and (min-width: 1260px) {
+            padding-bottom: 30px;
+          }
+
+
+          &:hover, &:focus {
+            background-color: $black;
+
+            .txt {
+              .title, .desc {
+                color: $white;
+                text-decoration: underline $white;
+              }
+            }
+          }
+
+          .picto {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            position: absolute;
+            top: -20px;
+            right: -10px;
+
+
+            @media only screen and (min-width: 768px) {
+              width: 320px;
+              height: 220px;
+              right: -15px;
+            }
+
+            @media only screen and (min-width: 1024px) {
+              width: 300px;
+              height: 200px;
+            }
+
+            @media only screen and (min-width: 1260px) {
+              width: 330px;
+              height: 210px;
+            }
+
+            @media only screen and (min-width: 1366px) {
+              width: 405px;
+              height: 240px;
+            }
+          }
+          
+          .facilotab {
+            background-image: url("../images/facilotab.jpeg");
+          }
+
+          .ecrire {
+            background-image: url("../images/ecrire.jpeg");
+            border: 1px solid #ddd;
+            background-size: 80%;
+            background-color: $white;
+          }
+
+          .ellcie {
+            background-image: url("../images/ellcie.jpeg");
+          }
+
+          .handieasy {
+            background-image: url("../images/handieasy.jpeg");
+            border: 1px solid #ddd;
+            background-size: 80%;
+            background-color: $white;
+          }
+
+          .famileo {
+            background-image: url("../images/famileo.jpeg");
+          }
+
+          .handicapzero {
+            background-image: url("../images/handicapzero.jpeg");
+            border: 1px solid #ddd;
+            background-size: 80%;
+            background-color: $white;
+          }
+
+          .banner {
+            &__elmnt {
+              font-family: $primaryFont;
+              color: $white;
+              background-color: $black;
+              font-size: 14px;
+              padding: 8px 14px;
+              margin: 0;
+              position: absolute;
+              top: 8%;
+              line-height: 1.0;
+            }
+          }
+
+          .txt {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .title, .desc {
+              color: $black;
+              text-decoration: underline $lightGray;
+              transition: all 0.3s ease-in-out;
+            }
+
+            .title {
+              font-family: $fontBold;
+              font-size: 16px;
+              padding-bottom: 10px;
+            }
+
+            .desc {
+              font-family: $primaryFont;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .handieasy {
+          padding-bottom: 30px;
+          @media only screen and (min-width: 768px) {
+            padding-bottom: 50px;
+          }
+          @media only screen and (min-width: 1024px) {
+            padding-bottom: 55px;
+          }
+          @media only screen and (min-width: 1260px) {
+            padding-bottom: 45px;
+          }
+          @media only screen and (min-width: 1366px) {
+            padding-bottom: 30px;
+          }
+        }
+
+        .handicap {
+          padding-bottom: 3px;
+          @media only screen and (min-width: 768px) {
+            padding-bottom: 14px;
+          }
+          @media only screen and (min-width: 1024px) {
+            padding-bottom: 23px;
+          }
+          @media only screen and (min-width: 1260px) {
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

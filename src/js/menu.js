@@ -49,3 +49,7 @@ menu.addEventListener(
     },
     true
 );
+
+
+var navHeight = document.querySelector('.lp-nav').offsetHeight;
+document.documentElement.style.setProperty('--scroll-padding', navHeight - 1 + 'px');
