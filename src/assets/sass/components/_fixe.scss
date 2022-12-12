@@ -1,0 +1,256 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.fixe {
+  .container {
+    .bannerImg {
+    }
+
+    .accordion-content {
+      display: flex;
+      flex-direction: column;
+
+      .top-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+
+        @media only screen and (min-width: 768px) {
+          flex-direction: row;
+        }
+
+        &__left {
+          width: 100%;
+          margin-bottom: 45px;
+
+          @media only screen and (min-width: 768px) {
+            margin-bottom: 0;
+            width: auto;
+          }
+
+          .cardLink {
+            background-color: $darkGray;
+            width: 95%;
+            height: 330px;
+            position: relative;
+
+            @media only screen and (min-width: 768px) {
+              width: 140px;
+              height: 240px;
+            }
+
+            @media #{$ps-desktop} {
+              width: 250px;
+              height: 420px;
+            }
+
+            &:hover, &:focus {
+              background-color: $black;
+              .text {
+                color: $white;
+                text-decoration: underline $white;
+              }
+            }
+
+
+            .card {
+              position: relative;
+
+              .card__image {
+                position: absolute;
+                left: 15px;
+                top: -20px;
+                border: 1px solid $darkGray;
+
+                @media only screen and (min-width: 768px) {
+                  left: 16px;
+                  top: -18px;
+                }
+
+                @media #{$ps-desktop} {
+                  left: 20px;
+                  top: -20px;
+                }
+              }
+
+              .display-mobile {
+                display: block;
+                width: 100%;
+                height: 290px;
+              }
+
+              .display-tablet, .display-desktop {
+                display: none;
+              }
+
+              @media only screen and (min-width: 768px) {
+                .display-tablet {
+                  display: block;
+                }
+                .display-mobile, .display-desktop {
+                  display: none;
+                }
+              }
+
+              @media #{$ps-desktop} {
+                .display-desktop {
+                  display: block;
+                }
+                .display-mobile, .display-tablet {
+                  display: none;
+                }
+              }
+            }
+
+            .text {
+              font-family: $fontBold;
+              font-size: 16px;
+              position: absolute;
+              bottom: 8px;
+              left: 15px;
+              transition: all 0.3s ease-in-out;
+
+              @media only screen and (min-width: 768px) {
+                font-size: 14px;
+                bottom: 15px;
+              }
+
+              @media #{$ps-desktop} {
+                font-size: 18px;
+                bottom: 20px;
+              }
+            }
+
+          }
+        }
+
+        &__right {
+
+          @media only screen and (min-width: 768px) {
+            padding-left: 160px;
+          }
+
+          .rightlist {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__item {
+              display: flex;
+              flex-direction: column;
+              width: 95%;
+
+              @media only screen and (min-width: 768px) {
+                width: 50%;
+              }
+
+              &:not(:last-child) {
+                padding-bottom: 60px;
+                @media only screen and (min-width: 768px) {
+                  padding-bottom: 0;
+                }
+              }
+
+              @media only screen and (min-width: 768px) {
+                &:first-child {
+                  padding-bottom: 60px;
+                }
+                &:nth-child(odd) {
+                  padding-right: 80px;
+                }
+              }
+
+              .photo {
+                width: 100%;
+                height: 140px;
+                position: relative;
+                background-color: $darkGray;
+                margin-bottom: 20px;
+
+                .list-photo {
+                  height: 100%;
+                  object-fit: cover;
+                  width: 100%;
+                  position: absolute;
+                  top: -20px;
+                  left: 15px;
+
+                  @media only screen and (min-width: 768px) {
+                    left: 20px;
+                  }
+                }
+
+                .display-mobile {
+                  display: block;
+                }
+
+                .display-tablet, .display-desktop {
+                  display: none;
+                }
+
+                @media only screen and (min-width: 768px) {
+                  width: 139px;
+                  height: 90px;
+
+                  .display-tablet {
+                    display: block;
+                  }
+                  .display-mobile, .display-desktop {
+                    display: none;
+                  }
+                }
+
+                @media #{$ps-desktop} {
+                  width: 254px;
+                  height: 175px;
+                  .display-desktop {
+                    display: block;
+                  }
+                  .display-mobile, .display-tablet {
+                    display: none;
+                  }
+                }
+              }
+
+              .desc {
+                font-family: $fontBold;
+                font-size: 16px;
+                margin-bottom: 20px;
+
+                @media only screen and (min-width: 768px) {
+                  font-size: 14px;
+                }
+
+                @media #{$ps-desktop} {
+                  font-size: 18px;
+                }
+              }
+
+              .link {
+                color: $black;
+                border: 1px solid $black;
+                font-family: $fontBold;
+                font-size: 14px;
+                padding: 12px 15px 10px 15px;
+                width: fit-content;
+                line-height: 1.0;
+
+                &:hover, &:focus {
+                  color: $white;
+                  background-color: $black;
+                }
+
+                &:focus, &:focus-within {
+                  outline: 2px solid $black;
+                }
+
+                @media #{$ps-desktop} {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

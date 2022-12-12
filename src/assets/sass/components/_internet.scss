@@ -1,0 +1,245 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.internet {
+  .container {
+    .accordion-content {
+      .heading {
+        color: $black;
+        font-family: $fontBold;
+        font-size: clamp(1.125rem, 3vw, 1.5rem);
+        padding-bottom: 15px;
+
+        @media only screen and (min-width: 768px) {
+          padding-bottom: 30px;
+          width: 370px;
+        }
+
+        @media #{$ps-desktop} {
+          padding-bottom: 40px;
+        }
+      }
+
+      .services-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 0;
+        grid-row-gap: 15px;
+        margin-bottom: 40px;
+
+        @media only screen and (min-width: 768px) {
+          grid-template-columns: repeat(3, auto);
+          grid-template-rows: auto;
+          grid-column-gap: 15px;
+          grid-row-gap: 0;
+          margin-bottom: 30px;
+        }
+
+        @media #{$ps-desktop} {
+          grid-column-gap: 0;
+          grid-row-gap: 0;
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 50px;
+        }
+
+        &__image {
+          width: 100%;
+          height: 180px;
+
+          @media only screen and (min-width: 768px) {
+            width: 215px;
+            height: auto;
+            margin-bottom: 0;
+          }
+
+          @media #{$ps-desktop} {
+            width: 370px;
+            margin-right: 20px;
+          }
+
+          .image {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
+
+          .display-mobile {
+            display: block;
+          }
+          .display-tablet, .display-desktop {
+            display: none;
+          }
+
+          @media only screen and (min-width: 768px) {
+            .display-tablet {
+              display: block;
+            }
+            .display-mobile, .display-desktop {
+              display: none;
+            }
+          }
+
+          @media #{$ps-desktop} {
+            .display-desktop {
+              display: block;
+            }
+            .display-mobile, .display-tablet {
+              display: none;
+            }
+          }
+        }
+
+        &__desc {
+          width: 100%;
+
+          @media only screen and (min-width: 768px) {
+            width: 215px;
+          }
+
+          @media #{$ps-desktop} {
+            width: 420px;
+          }
+
+          .desc-list {
+            width: 100%;
+
+            &__item {
+              &:not(:last-child) {
+                padding-bottom: 15px;
+
+                @media only screen and (min-width: 768px) {
+                  padding-bottom: 10px;
+                }
+
+                @media #{$ps-desktop} {
+                  padding-bottom: 20px;
+                }
+              }
+
+              &__link {
+                background-color: $white;
+                border: 1px solid $white;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 20px 30px;
+
+                @media only screen and (min-width: 768px) {
+                  padding: 15px;
+                }
+
+                @media #{$ps-desktop} {
+                  height: 110px;
+                  padding: 20px 30px;
+                }
+
+                &:hover, &:focus {
+                  border: 1px solid $black;
+                }
+
+                .link-title {
+                  color: $black;
+                  font-family: $fontBold;
+                  font-size: 18px;
+
+                  @media only screen and (min-width: 768px) {
+                    font-size: 16px;
+                  }
+
+                  @media #{$ps-desktop} {
+                    font-size: 18px;
+                  }
+                }
+
+                .link-text {
+                  color: $black;
+                  font-family: $primaryFont;
+                  font-size: 16px;
+                  margin-top: 10px;
+
+                  @media only screen and (min-width: 768px) {
+                    font-size: 14px;
+                  }
+
+                  @media #{$ps-desktop} {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &__discover {
+
+          @media only screen and (min-width: 768px) {
+            width: 240px;
+          }
+
+          @media #{$ps-desktop} {
+            width: auto;
+            padding-left: 80px;
+          }
+
+          &__logo {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 20px;
+          }
+
+          &__text {
+            .heading {
+              color: $black;
+              font-family: $fontBold;
+              font-size: 18px;
+              padding-bottom: 3px;
+
+              @media only screen and (min-width: 768px) {
+                font-size: 16px;
+              }
+
+              @media #{$ps-desktop} {
+                font-size: 18px;
+                width: fit-content;
+              }
+            }
+
+            .desc {
+              color: $black;
+              font-family: $primaryFont;
+              font-size: 14px;
+              margin-bottom: 15px;
+            }
+
+            .link {
+              color: $black;
+              font-family: $fontBold;
+              font-size: 14px;
+              border: 1px solid $black;
+              width: fit-content;
+              padding: 6px 10px 4px 10px;
+
+              @media #{$ps-desktop} {
+                font-size: 16px;
+                padding: 12px 15px 10px 15px;
+              }
+
+              &:hover, &:focus {
+                background-color: $black;
+                color: $white;
+              }
+
+              &:focus, &:focus-within {
+                outline: 2px solid $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

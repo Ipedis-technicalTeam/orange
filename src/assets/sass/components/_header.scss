@@ -46,6 +46,12 @@
       font-size: clamp(2.125rem, 6.5vw, 4.0625rem);
       margin-top: 50px;
       color: $black;
+      width: fit-content;
+
+      &:focus,&:focus-within {
+        outline: 2px solid $black;
+        outline-offset: 2px;
+      }
     }
 
     .headingTwo {

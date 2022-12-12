@@ -1,0 +1,162 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.bannerImg {
+  height: 280px;
+  background-color: #224254;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    height: 400px;
+  }
+
+  @media #{$ps-desktop} {
+    height: 550px;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .tablet, .desktop {
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobile, .desktop {
+      display: none;
+    }
+    .tablet {
+      display: block;
+    }
+  }
+
+  @media #{$ps-desktop} {
+    .mobile, .tablet {
+      display: none;
+    }
+    .desktop {
+      display: block;
+    }
+  }
+
+  .titleBlock {
+    background-color: $black;
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (min-width: 768px) {
+      width: 210px;
+      height: 210px;
+      padding: 25px 0 30px 30px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media #{$ps-desktop} {
+      padding: 30px 0 50px 30px;
+    }
+
+    &__heading {
+      color: $primaryColor;
+      font-family: $fontBold;
+      font-size: clamp(1.25rem, 3vw, 1.875rem);
+    }
+
+    &__btn {
+      background-color: $black;
+      color: $white;
+      border: 1px solid $white;
+      font-family: $fontBold;
+      transition: all .3s ease-in-out;
+      width: fit-content;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      @media only screen and (min-width: 768px) {
+        width: 145px;
+      }
+
+      @media #{$ps-desktop} {
+        padding: 8px 15px;
+      }
+
+      &:hover, &:focus {
+        background-color: $white;
+        color: $black;
+        .titleBlock__btn__icon {
+          .normal {
+            display: none;
+          }
+          .hover {
+            display: block;
+          }
+        }
+      }
+
+      &:focus, &:focus-within {
+        outline: 2px solid $white;
+      }
+
+      &__txt {
+        display: none;
+        padding-top: 3px;
+
+        @media only screen and (min-width: 768px) {
+          display: block;
+        }
+      }
+
+      &__icon {
+        width: 18px;
+        transition: all 0.3s ease-in-out;
+
+        .hover {
+          display: none;
+        }
+      }
+    }
+
+  }
+}
+
+.accordion-button.open {
+  .titleBlock__btn__icon {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion-content {
+  padding: 0;
+  background-color: $lightGray;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-content.open {
+  height: 100%;
+  opacity: 1;
+  pointer-events: inherit;
+  visibility: visible;
+  padding: 40px 15px 30px;
+
+
+  @media #{$ps-desktop} {
+    padding: 40px 50px;
+  }
+
+}

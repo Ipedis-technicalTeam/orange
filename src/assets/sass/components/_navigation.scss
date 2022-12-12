@@ -236,3 +236,10 @@
     display: none;
   }
 }
+
+.menu__list__item-link.active {
+  color: $primaryColor !important;
+  &::after {
+    background: $primaryColor !important;
+  }
+}

@@ -5,6 +5,7 @@
   background-color: $bodyTextColor;
   color: contrast($bodyTextColor, $lightColor, $darkColor);
   z-index: 99999;
+  position: fixed;
 
   &:focus-within {
     padding: 20px;

@@ -1,3 +1,21 @@
+let menuElements = document.querySelectorAll('.menu__list__item-link');
+let currentIndex = null;
+
+for (let i =0; i < menuElements.length; i++) {
+    menuElements[i].addEventListener('click', function() {
+        this.classList.add('active');
+
+        currentIndex = i;
+
+        menuElements.forEach(function(menuElement, index) {
+            if (index != currentIndex) {
+                menuElement.classList.remove('active');
+            }
+        })
+    });
+}
+
+
 function toggleNav(status, scope) {
     document.documentElement.classList.toggle("has-open-menu");
 

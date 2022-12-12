@@ -1,0 +1,128 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+/** section **/
+.section {
+  margin-bottom: 30px;
+
+  @media #{$ps-desktop} {
+    margin-bottom: 60px;
+  }
+}
+
+/** container **/
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 768px) {
+    width: 95%;
+    padding: 0;
+  }
+
+  @media only screen and (min-width: 1366px) {
+    width: 1300px;
+  }
+}
+
+/** heading  2 **/
+.title-h2 {
+  font-family: $fontBold;
+  font-size: clamp(1.5rem, 4vw, 2.125rem);
+  color: $black;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+  }
+
+  @media #{$ps-desktop} {
+    margin-bottom: 40px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $primaryColor;
+    width: 1.875rem;
+    height: 0.375rem;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/** contact heading 3 **/
+.contact-h3 {
+  color: $black;
+  font-family: $fontBold;
+  font-size: 18px;
+  margin-bottom: 20px;
+
+  @media #{$ps-desktop} {
+    font-size: 24px;
+  }
+}
+
+/** contact paragraph **/
+.contact-desc {
+  color: $gray;
+  font-family: $primaryFont;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  @media only screen and (min-width: 768px) {
+    line-height: 16px;
+  }
+  @media #{$ps-desktop} {
+    line-height: 22px;
+  }
+}
+
+/** link to contact section **/
+.internalLink {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+  &__text {
+    font-family: $fontBold;
+    font-size: 16px;
+    line-height: 1.0;
+    margin-right: 15px;
+    text-decoration: underline $lightGray;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__icon {
+    width: 8px;
+    margin-top: -5px;
+  }
+
+  &:hover, &:focus {
+    .internalLink__text {
+      text-decoration: underline $primaryColor;
+    }
+  }
+}
+
+.w-250 {
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    width: 154px;
+  }
+  @media #{$ps-desktop} {
+    width: 250px;
+  }
+}
+
+.w-150 {
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    width: 150px;
+  }
+}
