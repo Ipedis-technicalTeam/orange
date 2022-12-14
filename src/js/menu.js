@@ -1,73 +1,68 @@
-let menuElements = document.querySelectorAll('.menu__list__item-link');
-let currentIndex = null;
+let toggleMenuBtn = document.querySelector('.menu_button');
+let menu = document.querySelector('#menu');
+let menuItems = menu.querySelectorAll('.menu__list__item-link');
 
-for (let i =0; i < menuElements.length; i++) {
-    menuElements[i].addEventListener('click', function() {
-        this.classList.add('active');
-
-        currentIndex = i;
-
-        menuElements.forEach(function(menuElement, index) {
-            if (index != currentIndex) {
-                menuElement.classList.remove('active');
-            }
-        })
-    });
+for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+    })
 }
 
+function toggleTabindex(value) {
+    menuItems.forEach((item) => item.setAttribute('tabindex', value));
+}
 
-function toggleNav(status, scope) {
-    document.documentElement.classList.toggle("has-open-menu");
+function toggleMenu(e) {
+    toggleMenuBtn.classList.toggle('open');
+    menu.classList.toggle('open');
 
-    if (status == "open") {
-        scope.addEventListener("transitionend", () => {
-            scope.querySelector(".js-close").focus();
-        });
+    // Hide outline after clicking, but don't hide when using the keyboard
+    if (e.screenX !== 0 && e.screenY !== 0) {
+        toggleMenuBtn.blur();
     }
-    if (status == "close") {
-        scope.querySelector(".js-open").focus();
+
+    let label = toggleMenuBtn.getAttribute('aria-label');
+    if (label === "Ouvrir la navigation") {
+        toggleMenuBtn.setAttribute('aria-label', "Fermer la navigation");
+    } else {
+        toggleMenuBtn.setAttribute('aria-label', "Ouvrir la navigation");
+    }
+
+    let ariaAttribute = toggleMenuBtn.getAttribute('aria-expanded');
+    if (ariaAttribute === 'false') {
+        toggleMenuBtn.setAttribute('aria-expanded', 'true');
+        toggleTabindex(0);
+    } else {
+        toggleMenuBtn.setAttribute('aria-expanded', 'false');
+        toggleTabindex(-1);
     }
 }
 
-/* ----------
- * Open & close menu on buttons click
- */
-const menu = document.querySelector(".lp-nav");
+toggleMenuBtn.addEventListener('click', toggleMenu);
 
-menu.addEventListener(
-    "click",
-    (event) => {
-        const openButton = menu.querySelector(".js-open");
-        const closeButton = menu.querySelector(".js-close");
+// On small screens, hide menu items from tab order until menu opens
+if (window.innerWidth < 900) {
+    toggleTabindex(-1);
+}
 
-        if (event.target == openButton) {
-            toggleNav("open", menu);
-        } else if (event.target == closeButton) {
-            toggleNav("close", menu);
+let lastLink = document.querySelector('#lastLink');
+lastLink.addEventListener('keydown', function(e) {
+    if (e.keyCode === 9 && e.keyCode === 16 ) {
+        if (document.activeElement === toggleMenuBtn) {
+            lastLink.focus();
+            e.preventDefault();
         }
-    },
-    true
-);
-
-/* ----------
- * Close menu if focus is out of it
- */
-menu.addEventListener(
-    "blur",
-    (event) => {
-        // Check if the target link is an indirect child of .menu_list
-        const targetIsIn = event.relatedTarget.closest(".menu");
-
-        if (
-            document.documentElement.classList.contains("has-open-menu") &&
-            !targetIsIn
-        ) {
-            document.documentElement.classList.remove("has-open-menu");
+    } else if (e.keyCode === 9) {
+        if (document.activeElement === lastLink) {
+            toggleMenuBtn.focus();
+            e.preventDefault();
         }
-    },
-    true
-);
-
+    }
+});
 
 var navHeight = document.querySelector('.lp-nav').offsetHeight;
 document.documentElement.style.setProperty('--scroll-padding', navHeight - 1 + 'px');

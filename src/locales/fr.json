@@ -38,7 +38,13 @@
     "edito": {
       "h2" : "Édito",
       "h3" : "Vous simplifier la vie",
-      "desc" : "Vous allez découvrir dans ce catalogue les forfaits, les applications, les mobiles, les fixes et les objets connectés conçus pour vous rendre la vie plus facile et vous permettre d'être en lien avec vos proches."
+      "desc-1" : "Le catalogue Autonomie présente des solutions mobile, internet et TV, ainsi que fixe pour les personnes âgées ou en situation de handicap, pour plus de confort, de sécurité et de sérénité.",
+      "desc-2" : "Toutes les offres du catalogue sont valables en France métropolitaine du 15 décembre 2022 au 31 mars 2023 inclus, sauf mention contraire.",
+      "desc-3" : "Au cours de cette période, nous pourrons être amenés à vous proposer des produits de nature équivalente.",
+      "desc-4" : "Vous allez découvrir dans ce catalogue Autonomie les forfaits, les applications, les mobiles, les fixes et les objets connectés conçus pour vous rendre la vie plus facile et vous permettre d'être en lien avec vos proches.",
+      "pictogramDesc-1" : "Les pictogrammes suivants vous permettent de repérer dans le catalogue si les produits ou les offres sont adaptés à vos besoins.",
+      "pictogramDesc-2" : "Ce catalogue est écrit en langage clair avec des encarts en FALC (Facile à lire et à comprendre).",
+      "pictogramDesc-3" : "Les rubriques en FALC sont identifiées par le pictogramme suivant :"
     },
     "mobile": {
       "h2" : "Mobile - Internet et TV - Fixe"
@@ -49,7 +55,7 @@
     "contact": {
       "h2" : "Nous contacter",
       "left" : {
-        "headingBoutique": "245 boutiques labellisées Autonomie",
+        "headingBoutique": "226 boutiques labellisées Autonomie TBC",
         "descBoutique" : "Trouver la boutique la plus proche de chez vous sur notre site agence.orange.fr",
         "headingEspace" : "Nos espaces Autonomie",
         "descEspace" : "Une structure unique dédiée aux seniors et aux personnes en situation de handicap ainsi qu'à leurs aidants."
@@ -78,7 +84,8 @@
       },
       "right" : {
         "headingTel": "Par téléphone",
-        "descTel": "Nos conseillers spécialisés vous accueillent du lundi au vendredi de 9h à 18h quel que soit votre mode de communication."
+        "descTel": "Nos conseillers spécialisés vous accueillent du lundi au vendredi de 9h à 18h quel que soit votre mode de communication.",
+        "headingInt" : "Par Internet"
       }
     }
   },

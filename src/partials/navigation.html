@@ -4,19 +4,26 @@
     <!-- LOGO -->
     <div class="logo">
       <a href="https://www.orange.fr/portail" target="_blank" rel="noreferrer noopener" class="logo__link focus-white" id="nav-orange" data-i18n="navigation.logo.label" data-i18n-attr="aria-label">
-        <img src="../assets/images/logo-orange.jpeg" alt="" class="logo__link__img">
+        <img src="./assets/images/logo-orange.jpeg" alt="" class="logo__link__img">
       </a>
     </div>
 
-    <button class="menu_button menu_button--open js-open" aria-label="Open menu" aria-expanded="false" type="button">&#8801;</button>
+    <button class="menu_button menu_button--open js-open"
+            aria-label="Ouvrir la navigation"
+            aria-expanded="false"
+            type="button"
+            aria-haspopup="true"
+            aria-controls="menu">
+      <span class="menu-bar" aria-hidden="true"></span>
+      <span class="menu-bar" aria-hidden="true"></span>
+      <span class="menu-bar" aria-hidden="true"></span>
+    </button>
 
     <!-- MENU -->
-    <div class="menu">
-      <button class="menu_button menu_button--close js-close" aria-label="Close menu" aria-expanded="true" type="button">&times;</button>
-
+    <div id="menu" class="menu" >
       <ul class="menu__list">
         <li class="menu__list__item">
-          <a href="#contact" class="menu__list__item-link" data-i18n="navigation.list.item-1"></a>
+          <a id="firstLink" href="#contact" class="menu__list__item-link" data-i18n="navigation.list.item-1"></a>
         </li>
         <li class="menu__list__item">
           <a href="#mobile" class="menu__list__item-link" data-i18n="navigation.list.item-2"></a>
@@ -28,13 +35,14 @@
           <a href="#fixe" class="menu__list__item-link" data-i18n="navigation.list.item-4"></a>
         </li>
         <li class="menu__list__item">
-          <a href="#objets" class="menu__list__item-link" data-i18n="navigation.list.item-5"></a>
+          <a id="beforeLastLink" href="#objets" class="menu__list__item-link" data-i18n="navigation.list.item-5"></a>
         </li>
         <li class="menu__list__item">
-          <a href="#actuality" class="menu__list__item-link" data-i18n="navigation.list.item-6"></a>
+          <a id="lastLink" href="#actuality" class="menu__list__item-link" data-i18n="navigation.list.item-6"></a>
         </li>
       </ul>
     </div>
+
   </div>
 </nav>
 <!-- NAVIGATION END -->

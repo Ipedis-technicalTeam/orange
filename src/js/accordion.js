@@ -4,8 +4,17 @@ var accordion_buttons = document.querySelectorAll('.accordion-button');
     accordion_button.addEventListener('click', () => {
 
         accordion_button.classList.toggle('open');
-
+        var acc_button_text = accordion_button.querySelector('.accordion-button-txt');
         var btn_label = accordion_button.getAttribute('data-attr-id');
+
+        if (acc_button_text.innerHTML == "Voir plus") {
+            acc_button_text.innerHTML = "Voir moins";
+            accordion_button.setAttribute('aria-label', `Voir moins ${btn_label}`);
+        } else {
+            acc_button_text.innerHTML = "Voir plus";
+            accordion_button.setAttribute('aria-label', `Voir plus ${btn_label}`);
+        }
+
         var content_id = accordion_button.getAttribute('aria-controls');
         var accordion_content = document.getElementById(content_id);
         accordion_content.classList.toggle('open');

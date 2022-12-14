@@ -9,6 +9,21 @@
   }
 
   .container {
+
+    .actuality-banner {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+
+      @media only screen and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+
+      @media #{$ps-desktop} {
+        margin-bottom: 60px;
+      }
+    }
+
     .actuality__list {
       display: flex;
       flex-wrap: wrap;
@@ -87,7 +102,7 @@
           }
 
           @media only screen and (min-width: 1024px) {
-            padding-bottom: 40px;
+            padding-bottom: 30px;
           }
 
           @media only screen and (min-width: 1260px) {
@@ -227,12 +242,14 @@
         }
 
         .handicap {
+          height: 280px;
           padding-bottom: 3px;
           @media only screen and (min-width: 768px) {
+            height: 310px;
             padding-bottom: 14px;
           }
           @media only screen and (min-width: 1024px) {
-            padding-bottom: 23px;
+            padding-bottom: 10px;
           }
           @media only screen and (min-width: 1260px) {
             padding-bottom: 15px;

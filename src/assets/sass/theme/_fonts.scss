@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'Helvetica-Regular';
-  src: url('../fonts/Helvetica.woff') format('woff');
+  font-family: 'DFA-Regular';
+  src: url('../fonts/AccessibleDfA-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeueLTStd-Bd';
-  src: url('../fonts/HelveticaNeueLTStd-Bd.woff') format('woff');
+  font-family: 'DFA-Bold';
+  src: url('../fonts/AccessibleDfA-Bold.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 
-$primaryFont: 'Helvetica-Regular', sans-serif;
-$fontBold: 'HelveticaNeueLTStd-Bd', sans-serif;
+$primaryFont: 'DFA-Regular', sans-serif;
+$fontBold: 'DFA-Bold', sans-serif;

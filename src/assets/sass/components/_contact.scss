@@ -12,6 +12,20 @@
       padding: 50px;
       margin-bottom: 60px;
     }
+
+    .contact-banner {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+
+      @media only screen and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+
+      @media #{$ps-desktop} {
+        margin-bottom: 40px;
+      }
+    }
     
     .content {
       display: grid;
@@ -119,7 +133,7 @@
           align-items: flex-start;
           border-bottom: 2px solid $lighterGray;
           padding-bottom: 30px;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
 
           &__itemNumber {
             margin-bottom: 15px;
@@ -134,47 +148,6 @@
 
               .telephone {
                 width: 100%;
-              }
-            }
-          }
-
-          &__itemInternet {
-
-            a {
-              display: flex;
-              align-items: flex-start;
-              border: 1px solid $black;
-              background-color: $white;
-              width: fit-content;
-              padding: 8px 15px;
-
-              &:hover, &:focus {
-                background-color: $black;
-
-                .txt {
-                  .contact-h3, .intDesc {
-                    color: $white;
-                  }
-                }
-              }
-
-              .txt {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-
-                .contact-h3 {
-                  color: $black;
-                  font-size: 18px;
-                  font-family: $fontBold;
-                  margin-bottom: 7px;
-                }
-
-                .intDesc {
-                  color: $gray;
-                  font-size: 14px;
-                  font-family: $primaryFont;
-                }
               }
             }
           }
@@ -195,7 +168,6 @@
           font-family: $fontBold;
           font-size: 16px;
           padding: 13px 15px 12px 15px;
-          margin-bottom: 40px;
           line-height: 1.0;
 
           &:hover, &:focus {
