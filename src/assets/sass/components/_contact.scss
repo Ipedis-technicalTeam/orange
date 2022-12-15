@@ -88,15 +88,20 @@
         .espaceList {
           display: grid;
           grid-template-columns: 1fr;
-          grid-template-rows: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 1fr);
           grid-column-gap: 0;
           grid-row-gap: 15px;
+          margin-bottom: 30px;
+
+          @media only screen and (min-width: 768px) {
+            margin-bottom: 0;
+          }
 
           @media #{$ps-desktop} {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: 1fr;
             grid-column-gap: 20px;
-            grid-row-gap: 15px;
+            grid-row-gap: 0;
           }
 
           &__item {
@@ -150,6 +155,13 @@
                 width: 100%;
               }
             }
+          }
+        }
+
+        .internetLink {
+          text-decoration: underline $lightGray;
+          &:hover, &:focus {
+            text-decoration: underline $black;
           }
         }
 

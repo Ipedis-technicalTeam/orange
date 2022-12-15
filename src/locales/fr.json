@@ -31,7 +31,10 @@
   "header": {
     "h1-sr" : "Le catalogue Autonomie",
     "h1-visible" : "Le catalogue<br>Autonomie",
-    "h2" : "Automne 2022"
+    "h2" : {
+      "sr" : "Automne-Hiver 2022-2023 (novembre 2022 - mars 2023)",
+      "visible" : "Automne-Hiver 2022-2023<br>(novembre 2022 - mars 2023)"
+    }
   },
 
   "main": {

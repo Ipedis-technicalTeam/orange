@@ -26,7 +26,7 @@
   }
 
   @media only screen and (min-width: $ps-breakpoint-mobile + 1) {
-    height: 400px;
+    height: 500px;
     background-image: url("../images/cover-md-new.jpg");
     margin-top: 60px;
   }
@@ -43,10 +43,14 @@
 
     .headingOne {
       font-family: $fontBold;
-      font-size: clamp(2.125rem, 6.5vw, 4.0625rem);
-      margin-top: 50px;
+      font-size: clamp(1.8rem, 6.5vw, 4.0625rem);
+      margin-top: 20px;
       color: $black;
       width: fit-content;
+
+      @media only screen and (min-width: 768px) {
+        margin-top: 50px;
+      }
 
       &:focus,&:focus-within {
         outline: 2px solid $black;
