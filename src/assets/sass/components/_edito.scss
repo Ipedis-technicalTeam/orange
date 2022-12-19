@@ -86,12 +86,15 @@
         &__top {
           display: flex;
           flex-direction: column;
-          margin-bottom: 20px;
 
           @media only screen and (min-width: 768px) {
-            margin-bottom: 30px;
             flex-direction: row;
           }
+
+          @media #{$ps-desktop} {
+            align-items: center;
+          }
+
 
           &__icon {
             width: 135px;
@@ -116,16 +119,6 @@
               @media #{$ps-desktop} {
                 font-size: 16px;
               }
-            }
-          }
-        }
-
-        &__btm {
-          p {
-            font-size: 14px;
-
-            @media #{$ps-desktop} {
-              font-size: 16px;
             }
           }
         }
