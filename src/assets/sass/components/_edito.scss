@@ -34,13 +34,7 @@
     }
 
     .pictogram {
-      background-color: $lightGray;
-      padding: 30px 20px;
       margin-top: 30px;
-
-      @media #{$ps-desktop} {
-        padding: 50px;
-      }
 
       .pictogramList {
         display: grid;
@@ -58,10 +52,81 @@
         }
 
         &__item {
+          background-color: $lightGray;
+          border-radius: 10px;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          @media #{$ps-desktop} {
+            padding: 30px;
+          }
 
           &-img {
             width: 40px;
             margin-bottom: 10px;
+          }
+        }
+      }
+
+      .falc {
+        background-color: $lightGray;
+        padding: 20px;
+
+        @media only screen and (min-width: 768px) {
+          padding: 30px;
+        }
+
+        @media #{$ps-desktop} {
+          padding: 50px;
+        }
+
+        &__top {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          @media only screen and (min-width: 768px) {
+            margin-bottom: 30px;
+            flex-direction: row;
+          }
+
+          &__icon {
+            width: 135px;
+            height: auto;
+            margin-bottom: 20px;
+
+            @media only screen and (min-width: 768px) {
+              margin-bottom: 0;
+              margin-right: 30px;
+            }
+
+            @media #{$ps-desktop} {
+              margin-right: 50px;
+            }
+          }
+
+          &__desc {
+
+            p {
+              font-size: 14px;
+
+              @media #{$ps-desktop} {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        &__btm {
+          p {
+            font-size: 14px;
+
+            @media #{$ps-desktop} {
+              font-size: 16px;
+            }
           }
         }
       }

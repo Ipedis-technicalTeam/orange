@@ -52,7 +52,7 @@
         margin-top: 50px;
       }
 
-      &:focus,&:focus-within {
+      &:focus, &:focus-within {
         outline: 2px solid $black;
         outline-offset: 2px;
       }

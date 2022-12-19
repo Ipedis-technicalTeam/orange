@@ -140,12 +140,59 @@
 }
 
 .accordion-content {
-  padding: 0;
   background-color: $lightGray;
   height: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: 0.5s;
+  padding: 0 20px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  @media #{$ps-desktop} {
+    padding: 0 50px;
+  }
+
+  /** list inside accordion panel **/
+  &__list {
+    &__item {
+      position: relative;
+      padding-left: 20px;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 10px;
+        height: 10px;
+        background-image: url("..//images/list-arrow.svg");
+      }
+      
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+
+      &-link {
+        text-decoration: 1px underline $black;
+        font-family: $primaryFont;
+        padding: 5px 10px;
+
+        &:hover, &:focus {
+          font-weight: 900;
+          background-color: $black;
+          color: $white;
+          text-decoration: 1px underline $white;
+        }
+
+        &:focus, &:focus-within {
+          outline: 2px solid $black;
+        }
+      }
+    }
+  }
 }
 
 .accordion-content.open {
@@ -153,11 +200,13 @@
   opacity: 1;
   pointer-events: inherit;
   visibility: visible;
-  padding: 40px 15px 30px;
+  padding: 20px;
 
-
-  @media #{$ps-desktop} {
-    padding: 40px 50px;
+  @media only screen and (min-width: 768px) {
+    padding: 30px;
   }
 
+  @media #{$ps-desktop} {
+    padding: 50px;
+  }
 }

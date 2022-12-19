@@ -91,25 +91,6 @@
     }
 
     .menu {
-      //display: flex;
-      //flex-direction: column;
-      //height: 100%;
-      //width: 100%;
-      //max-width: 19rem;
-      //position: fixed;
-      //z-index: 40;
-      //top: 0;
-      //right: 0;
-      //margin: 0;
-      //background-color: $black;
-      //transition: 0.4s;
-      //padding-top: 60px;
-      //visibility: hidden;
-      //transform: translateX(100%);
-      //overflow-y: auto;
-      //-webkit-overflow-scrolling: touch;
-      //overscroll-behavior-y:contain;
-
       position: fixed;
       top: 40px;
       right: -100%;
@@ -122,6 +103,7 @@
       transition: all .5s ease-in-out;
 
       @media only screen and (min-width: 768px) {
+        top: 60px;
         max-width: 30rem;
       }
 
@@ -190,10 +172,6 @@
         height: 40px;
       }
     }
-  }
-
-  .menu_button {
-    font-size: 2rem;
   }
 }
 
