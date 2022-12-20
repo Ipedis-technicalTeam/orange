@@ -35,93 +35,51 @@
 
     .pictogram {
       margin-top: 30px;
+      background-color: $lightGray;
+      padding: 20px;
+
+      @media only screen and (min-width: 768px) {
+        padding: 30px;
+      }
+
+      @media #{$ps-desktop} {
+        padding: 50px;
+      }
 
       .pictogramList {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
+        margin-top: 30px;
         margin-bottom: 30px;
 
-        @media #{$ps-desktop} {
-          grid-template-columns: repeat(5, 1fr);
-          grid-template-rows: auto;
-          grid-column-gap: 15px;
-          grid-row-gap: 0;
-        }
-
         &__item {
-          background-color: $lightGray;
-          border-radius: 10px;
-          padding: 20px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          justify-content: flex-start;
 
-          @media #{$ps-desktop} {
-            padding: 30px;
+          @media only screen and (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+          }
+
+          &:not(:last-child) {
+            padding-bottom: 20px;
           }
 
           &-img {
             width: 40px;
             margin-bottom: 10px;
-          }
-        }
-      }
-
-      .falc {
-        background-color: $lightGray;
-        padding: 20px;
-
-        @media only screen and (min-width: 768px) {
-          padding: 30px;
-        }
-
-        @media #{$ps-desktop} {
-          padding: 50px;
-        }
-
-        &__top {
-          display: flex;
-          flex-direction: column;
-
-          @media only screen and (min-width: 768px) {
-            flex-direction: row;
-          }
-
-          @media #{$ps-desktop} {
-            align-items: center;
-          }
-
-
-          &__icon {
-            width: 135px;
-            height: auto;
-            margin-bottom: 20px;
 
             @media only screen and (min-width: 768px) {
               margin-bottom: 0;
               margin-right: 30px;
             }
-
-            @media #{$ps-desktop} {
-              margin-right: 50px;
-            }
-          }
-
-          &__desc {
-
-            p {
-              font-size: 14px;
-
-              @media #{$ps-desktop} {
-                font-size: 16px;
-              }
-            }
           }
         }
+      }
+
+      .falc-icon {
+        width: 135px;
+        height: auto;
+        margin-bottom: 10px;
       }
     }
   }

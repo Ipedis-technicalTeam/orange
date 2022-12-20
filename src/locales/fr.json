@@ -37,13 +37,15 @@
   "main": {
     "edito": {
       "h2" : "Édito",
-      "h3" : "Vous simplifier la vie",
       "desc-1" : "Le catalogue Autonomie présente des solutions mobile, internet et TV, ainsi que fixe pour les personnes âgées ou en situation de handicap, pour plus de confort, de sécurité et de sérénité.",
       "desc-2" : "Toutes les offres du catalogue sont valables en France métropolitaine du 15 décembre 2022 au 31 mars 2023 inclus, sauf mention contraire.",
       "desc-3" : "Au cours de cette période, nous pourrons être amenés à vous proposer des produits de nature équivalente.",
       "desc-4" : "Vous allez découvrir dans ce catalogue Autonomie les forfaits, les applications, les mobiles, les fixes et les objets connectés conçus pour vous rendre la vie plus facile et vous permettre d'être en lien avec vos proches.",
       "pictogramDesc-1" : "Les pictogrammes suivants vous permettent de repérer dans le catalogue si les produits ou les offres sont adaptés à vos besoins.",
-      "pictogramDesc-2" : "Ce catalogue est écrit en langage clair avec des encarts en FALC (Facile à lire et à comprendre). Les rubriques en FALC sont identifiées par le pictogramme suivant :"
+      "pictogramDesc-2" : "Ce catalogue est écrit en langage clair avec des encarts en FALC (Facile à lire et à comprendre.)",
+      "pictogramDesc-3" : "Ce catalogue a été rédigé avec l'aide de la société U31, une équipe experte et une technologie innovante pour diffuser le Langage Clair et vous accompagner dans l'adaptation de vos contenus.",
+      "pictogramDesc-4" : "Les rubriques en FALC sont identifiées par le pictogramme suivant :",
+      "pictogramDesc-5" : "Pour y accéder vous devez cliquer sur \"Cliquez ici pour lire ce texte en FALC (Facile à Lire et à Comprendre)\""
     },
     "mobile": {
       "h2" : "Mobile - Internet et TV - Fixe"

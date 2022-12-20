@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c580862e-7f94-4fbb-b14a-e954747bc02d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/actuality-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/cover-lg-new.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/cover-md-new.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/cover-sm-new.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sass/components/_actuality.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sass/components/_actuality.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/sass/components/_edito.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sass/components/_edito.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sass/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sass/components/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locales/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/sections/actuality.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/sections/actuality.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partials/sections/edito.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/sections/edito.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/sections/objets.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/sections/objets.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +21,37 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/partials/sections/edito.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="527">
+                  <caret line="40" column="338" selection-start-line="40" selection-start-column="338" selection-end-line="40" selection-end-column="338" />
+                  <folding>
+                    <element signature="e#2257#2263#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/assets/sass/layout/_general.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/locales/fr.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="206">
-                  <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
+                <state relative-caret-position="387">
+                  <caret line="47" column="139" selection-start-line="47" selection-start-column="139" selection-end-line="47" selection-end-column="139" />
                   <folding>
                     <element signature="n#!!block;n#skip-link#0;n#!!top" />
                     <element signature="n#!!block;n#navigation#0;n#!!top" />
@@ -45,53 +62,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/partials/sections/actuality.html">
+            <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_edito.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
-                  <caret line="31" column="137" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_actuality.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="505">
-                  <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/partials/sections/contact.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1065">
-                  <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_header.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="79">
-                  <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/partials/sections/edito.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="545">
-                  <caret line="39" column="211" selection-start-line="39" selection-start-column="211" selection-end-line="39" selection-end-column="211" />
-                  <folding>
-                    <element signature="e#2295#2301#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="613">
+                  <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -157,20 +131,19 @@
         <option value="$PROJECT_DIR$/src/partials/footer.html" />
         <option value="$PROJECT_DIR$/src/partials/sections/contact.html" />
         <option value="$PROJECT_DIR$/src/assets/sass/components/_header.scss" />
-        <option value="$PROJECT_DIR$/src/assets/sass/components/_edito.scss" />
-        <option value="$PROJECT_DIR$/src/locales/fr.json" />
         <option value="$PROJECT_DIR$/src/partials/sections/objets.html" />
         <option value="$PROJECT_DIR$/src/partials/sections/actuality.html" />
         <option value="$PROJECT_DIR$/src/assets/sass/components/_actuality.scss" />
+        <option value="$PROJECT_DIR$/src/locales/fr.json" />
         <option value="$PROJECT_DIR$/src/partials/sections/edito.html" />
+        <option value="$PROJECT_DIR$/src/assets/sass/components/_edito.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1920" />
-    <option name="y" value="359" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -305,18 +278,19 @@
       <workItem from="1670996630965" duration="13490000" />
       <workItem from="1671077319917" duration="8520000" />
       <workItem from="1671180820880" duration="7484000" />
-      <workItem from="1671427835680" duration="5813000" />
+      <workItem from="1671427835680" duration="6103000" />
+      <workItem from="1671520691151" duration="1639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129024000" />
+    <option name="totallyTimeSpent" value="130953000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="359" width="1920" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14536741" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10969116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -331,7 +305,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32949308" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.280829" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20264317" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,13 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/sass/layout/_general.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="82" column="3" selection-start-line="72" selection-start-column="2" selection-end-line="82" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/sass/layout/_resets.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
@@ -627,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/partials/sections/objets.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -641,36 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/locales/fr.json">
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
-          <folding>
-            <element signature="n#!!block;n#skip-link#0;n#!!top" />
-            <element signature="n#!!block;n#navigation#0;n#!!top" />
-            <element signature="n#!!block;n#footer#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/partials/sections/actuality.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="31" column="137" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_actuality.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_edito.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="89" column="53" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
+        <state relative-caret-position="79">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -681,13 +615,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_actuality.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/partials/sections/actuality.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="31" column="137" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/layout/_general.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/locales/fr.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="47" column="139" selection-start-line="47" selection-start-column="139" selection-end-line="47" selection-end-column="139" />
+          <folding>
+            <element signature="n#!!block;n#skip-link#0;n#!!top" />
+            <element signature="n#!!block;n#navigation#0;n#!!top" />
+            <element signature="n#!!block;n#footer#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/partials/sections/edito.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="39" column="211" selection-start-line="39" selection-start-column="211" selection-end-line="39" selection-end-column="211" />
+        <state relative-caret-position="527">
+          <caret line="40" column="338" selection-start-line="40" selection-start-column="338" selection-end-line="40" selection-end-column="338" />
           <folding>
-            <element signature="e#2295#2301#0" expanded="true" />
+            <element signature="e#2257#2263#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/components/_edito.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
         </state>
       </provider>
     </entry>
