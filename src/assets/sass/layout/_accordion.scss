@@ -157,6 +157,7 @@
 
   /** list inside accordion panel **/
   &__list {
+    display: none;
     &__item {
       position: relative;
       padding-left: 20px;
@@ -190,6 +191,11 @@
         &:focus, &:focus-within {
           outline: 2px solid $black;
         }
+
+        .heading {
+          display: block;
+          font-family: $fontBold;
+        }
       }
     }
   }
@@ -208,5 +214,9 @@
 
   @media #{$ps-desktop} {
     padding: 50px;
+  }
+
+  .accordion-content__list {
+    display: block;
   }
 }

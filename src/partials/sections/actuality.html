@@ -1,67 +1,62 @@
-<section id="actuality" class="actuality">
+<section id="actuality" class="actuality section">
     <div class="container">
-        <h2 class="title-h2" data-i18n="main.actuality.h2"></h2>
-        <img src="./assets/images/actuality-header.jpg" alt="" class="actuality-banner">
-        <ul class="actuality__list">
-            <li class="actuality__list__item">
-                <a target-page="22" class="actuality__list__item-link">
-                    <div class="picto facilotab banner">
-                        <p class="banner__elmnt">Offre privilège</p>
-                    </div>
-                    <div class="txt">
-                        <span class="title" aria-label="Offre privilège. Facilotab. Transformer votre tablette Android en tablette simplifiée">Facilotab</span>
-                        <span class="desc" aria-hidden="true">Transformer votre tablette Android en tablette simplifiée</span>
-                    </div>
-                </a>
-            </li>
-            <li class="actuality__list__item">
-                <a target-page="16" class="actuality__list__item-link">
-                    <div class="picto ecrire"></div>
-                    <div class="txt">
-                        <span class="title" aria-label="Écrire en couleurs. Aider les enfants ayant des difficultés de lecture et d’écriture">Écrire en couleurs</span>
-                        <span class="desc" aria-hidden="true">Aider les enfants ayant des difficultés de lecture et d’écriture</span>
-                    </div>
-                </a>
-            </li>
-            <li class="actuality__list__item">
-                <a href="https://somla.net/orange" target="_blank" rel="noreferrer" class="actuality__list__item-link somla">
-                    <div class="picto somla banner">
-                    </div>
-                    <div class="txt">
-                        <span class="title" aria-label="Somlà, Somlà est une solution pour faciliter la Visioconférence (les appels vidéo)">Somlà</span>
-                        <span class="desc" aria-hidden="true">Somlà est une solution pour faciliter la Visioconférence (les appels vidéo)</span>
-                    </div>
-                </a>
-            </li>
-            <li class="actuality__list__item">
-                <a target-page="39" class="actuality__list__item-link handieasy">
-                    <div class="picto handieasy"></div>
-                    <div class="txt">
-                        <span class="title" aria-label="Handieasy. Bras de support pour objets connectés">Handieasy</span>
-                        <span class="desc" aria-hidden="true">Bras de support pour objets connectés</span>
-                    </div>
-                </a>
-            </li>
-            <li class="actuality__list__item">
-                <a href="https://boutique.orange.fr/informations/accessibilite-autonomie/famileo/" target="_blank" rel="noreferrer" class="actuality__list__item-link famileo-link">
-                    <div class="picto famileo banner">
-                        <p class="banner__elmnt" aria-hidden="true">1 mois offert</p>
-                    </div>
-                    <div class="txt">
-                        <span class="title" aria-label="1 mois offert. Famileo. Le journal familial qui fait le bonheur des grands-parents">Famileo</span>
-                        <span class="desc" aria-hidden="true">Le journal familial qui fait le bonheur des grands‑parents</span>
-                    </div>
-                </a>
-            </li>
-            <li class="actuality__list__item">
-                <a href="https://www.handicapzero.org/telephonie/operateurs-reseau/orange" target="_blank" rel="noreferrer" class="actuality__list__item-link handicap">
-                    <div class="picto handicapzero"></div>
-                    <div class="txt">
-                        <span class="title" aria-label="HandiCapZéro. Partenaire Orange pour la réalisation des factures en braille et larges caractères et la formation du SmartVision 2">HandiCapZéro</span>
-                        <span class="desc" aria-hidden="true">Partenaire Orange pour la réalisation des factures en braille et&nbsp;larges caractères et la formation du SmartVision 2</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
+        <div class="bannerImg">
+            <img src="./assets/images/cover-actuality-small.jpg" alt="" class="mobile">
+            <img src="./assets/images/cover-actuality-medium.jpg" alt="" class="tablet">
+            <img src="./assets/images/cover-actuality-large.jpg" alt="" class="desktop">
+
+            <div class="titleBlock">
+                <h3 class="titleBlock__heading">Actualités</h3>
+                <button type="button" id="accordion-button-5" aria-controls="accordion-content-5" class="titleBlock__btn accordion-button" aria-expanded="false" data-attr-id="sur les actualités" aria-label="Voir plus sur les actualités">
+                    <span class="titleBlock__btn__txt accordion-button-txt" aria-hidden="true">Voir plus</span>
+                    <span class="titleBlock__btn__icon">
+                        <img src="./assets/images/arrow-down-white.svg" alt="" class="normal" aria-hidden="true">
+                        <img src="./assets/images/arrow-down-black.svg" alt="" class="hover" aria-hidden="true">
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div id="accordion-content-5" class="accordion-content" aria-hidden="true">
+            <ul class="accordion-content__list">
+                <li class="accordion-content__list__item">
+                    <a target-page="24" class="accordion-content__list__item-link" aria-label="Facilotab. Transformer votre tablette Android en tablette simplifiée">
+                        <span class="heading">Facilotab</span>
+                        <span>Transformer votre tablette Android en tablette simplifiée</span>
+                    </a>
+                </li>
+                <li class="accordion-content__list__item">
+                    <a target-page="17" class="accordion-content__list__item-link" aria-label="Écrire en couleurs. Aider les enfants ayant des difficultés de lecture et d’écriture">
+                        <span class="heading">Écrire en couleurs</span>
+                        <span>Aider les enfants ayant des difficultés de lecture et d’écriture</span>
+                    </a>
+                </li>
+                <li class="accordion-content__list__item">
+                    <a href="https://somla.net/orange" target="_blank" rel="noreferrer" class="accordion-content__list__item-link" aria-label="Somlà. Somlà est une solution pour faciliter la Visioconférence (les appels vidéo)">
+                        <span class="heading">Somlà</span>
+                        <span>Somlà est une solution pour faciliter la Visioconférence (les appels vidéo)</span>
+                    </a>
+                </li>
+                <li class="accordion-content__list__item">
+                    <a target-page="42" class="accordion-content__list__item-link" aria-label="Handieasy. Bras de support pour objets connectés">
+                        <span class="heading">Handieasy</span>
+                        <span>Bras de support pour objets connectés</span>
+                    </a>
+                </li>
+                <li class="accordion-content__list__item">
+                    <a href="https://boutique.orange.fr/informations/accessibilite-autonomie/famileo/" target="_blank" rel="noreferrer" class="accordion-content__list__item-link" aria-label="Famileo. Le journal familial qui fait le bonheur des grands‑parents">
+                        <span class="heading">Famileo</span>
+                        <span>Le journal familial qui fait le bonheur des grands‑parents</span>
+                    </a>
+                </li>
+                <li class="accordion-content__list__item">
+                    <a href="https://www.handicapzero.org/telephonie/operateurs-reseau/orange" target="_blank" rel="noreferrer" aria-label="HandiCapZéro. Partenaire Orange pour la réalisation des factures en braille et larges caractères et la formation du SmartVision 2" class="accordion-content__list__item-link">
+                        <span class="heading" aria-hidden="true">HandiCapZéro</span>
+                        <span aria-hidden="true">Partenaire Orange pour la réalisation des factures en braille et larges caractères et la formation du SmartVision 2</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </section>

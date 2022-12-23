@@ -13,15 +13,15 @@ for (var i = 0; i < menuItems.length; i++) {
     })
 }
 
-function callback(entries) {
-    entries.map((entry) => {
-        console.log("this is " + entry.target.id);
-    });
-}
-
-menuItems.forEach((target) => {
-    new IntersectionObserver(callback).observe(target);
-});
+// function callback(entries) {
+//     entries.map((entry) => {
+//         console.log("this is " + entry.target.id);
+//     });
+// }
+//
+// menuItems.forEach((target) => {
+//     new IntersectionObserver(callback).observe(target);
+// });
 
 
 function toggleTabindex(value) {
@@ -82,5 +82,5 @@ if (window.screen.width <= 1024) {
 }
 
 
-var navHeight = document.querySelector('.lp-nav').offsetHeight;
-document.documentElement.style.setProperty('--scroll-padding', navHeight - 1 + 'px');
+// var navHeight = document.querySelector('.lp-nav').offsetHeight;
+// document.documentElement.style.setProperty('--scroll-padding', navHeight - 1 + 'px');
