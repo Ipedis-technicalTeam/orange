@@ -3,7 +3,7 @@ let menu = document.querySelector('#menu');
 let menuItems = menu.querySelectorAll('.menu__list__item-link');
 var current = document.getElementsByClassName("active");
 
-
+// Add active class to menu item on click
 for (var i = 0; i < menuItems.length; i++) {
     menuItems[i].addEventListener("click", function() {
         if (current.length > 0) {
@@ -13,17 +13,7 @@ for (var i = 0; i < menuItems.length; i++) {
     })
 }
 
-// function callback(entries) {
-//     entries.map((entry) => {
-//         console.log("this is " + entry.target.id);
-//     });
-// }
-//
-// menuItems.forEach((target) => {
-//     new IntersectionObserver(callback).observe(target);
-// });
-
-
+// Toggle menu
 function toggleTabindex(value) {
     menuItems.forEach((item) => item.setAttribute('tabindex', value));
 }
@@ -45,7 +35,7 @@ function toggleMenu(e) {
     }
 
     let ariaAttribute = toggleMenuBtn.getAttribute('aria-expanded');
-    if (window.screen.width <= 1024) {
+    if (window.innerWidth <= 1024) {
         if (ariaAttribute === 'false') {
             toggleMenuBtn.setAttribute('aria-expanded', 'true');
             toggleTabindex(0);
@@ -59,28 +49,55 @@ function toggleMenu(e) {
 toggleMenuBtn.addEventListener('click', toggleMenu);
 
 // On small screens, hide menu items from tab order until menu opens
-if (window.screen.width < 900) {
+if (window.innerWidth <= 1024) {
     toggleTabindex(-1);
 }
 
-
+// Trap focus on hamburger menu
 let lastLink = document.querySelector('#lastLink');
-if (window.screen.width <= 1024) {
+if (window.innerWidth <= 1024) {
     lastLink.addEventListener('keydown', function(e) {
-        if (e.keyCode === 9 && e.keyCode === 16 ) {
-            if (document.activeElement === toggleMenuBtn) {
-                lastLink.focus();
-                e.preventDefault();
-            }
-        } else if (e.keyCode === 9) {
-            if (document.activeElement === lastLink) {
-                toggleMenuBtn.focus();
-                e.preventDefault();
-            }
+        if (e.keyCode === 9) {
+            toggleMenuBtn.focus();
+            e.preventDefault();
+        }
+    });
+
+    toggleMenuBtn.addEventListener('keydown', function(e) {
+        if (e.keyCode === 9 && e.keyCode === 16) {
+            lastLink.focus();
+            e.preventDefault();
         }
     });
 }
 
 
-// var navHeight = document.querySelector('.lp-nav').offsetHeight;
-// document.documentElement.style.setProperty('--scroll-padding', navHeight - 1 + 'px');
+// Change active class onScroll
+// Get all sections that have an ID defined
+const sections = document.querySelectorAll("section[id]");
+
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+
+    // Get current scroll position
+    let scrollY = window.pageYOffset;
+
+    // Loop through sections to get height, top and ID values for each
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 70;
+        sectionId = current.getAttribute("id");
+
+        /*
+        - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+        - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+        */
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector(".menu__list__item a[href*=" + sectionId + "]").classList.add("active");
+        } else {
+            document.querySelector(".menu__list__item a[href*=" + sectionId + "]").classList.remove("active");
+        }
+    });
+}

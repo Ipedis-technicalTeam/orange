@@ -2,13 +2,23 @@
 @use '../utilities' as *;
 
 #skip-links {
-  background-color: $bodyTextColor;
-  color: contrast($bodyTextColor, $lightColor, $darkColor);
   z-index: 99999;
-  position: fixed;
 
-  &:focus-within {
-    padding: 20px;
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .skip-link {
+    color: $white;
+    background-color: $black;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -19,13 +29,10 @@
     position: static;
     inline-size: fit-content;
     block-size: fit-content;
+    outline: 2px solid $black;
 
-    @include not-support('inline-size: fit-content') {
-      width: fit-content;
-    }
-
-    @include not-support('block-size: fit-content') {
-      height: fit-content;
+    #skip-links {
+      margin-bottom: 70px;
     }
   }
 }
